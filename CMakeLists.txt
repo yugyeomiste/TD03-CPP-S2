@@ -8,8 +8,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/${CMAKE_BUILD
 # Trouve tous les fichiers .cpp dans mon répertoire src
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS "src/*.cpp")
 
-# On cherche les fichiers qui commencent par "TD03_"
-file(GLOB_RECURSE SRC_MAIN_FILES CONFIGURE_DEPENDS "src/TD03_*.cpp")
+# On cherche les fichiers qui commencent par "TD0_"
+file(GLOB_RECURSE SRC_MAIN_FILES CONFIGURE_DEPENDS "src/**/TD*.cpp")
 
 # On enlève les fichiers exos des fichiers sources de base
 list(REMOVE_ITEM SRC_FILES ${SRC_MAIN_FILES})
